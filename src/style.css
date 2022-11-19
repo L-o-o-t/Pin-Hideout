@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&family=Silkscreen&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,11 +16,13 @@
 
 @layer utilities {
     .bg-opacity {
-background-color: rgba(22, 22, 22, 0.9);
+        background-color: rgba(22, 22, 22, 0.9);
     }
+
     .text-shadow-sm {
         text-shadow: 1px 1px #000000;
     }
+
     .text-shadow {
         text-shadow: 1px 2px #000000;
     }
@@ -50,7 +53,7 @@ h6 {
 }
 
 li {
-    @apply  flex items-center;
+    @apply flex items-center;
 }
 
 li a {
@@ -64,9 +67,11 @@ a {
 a:hover {
     @apply text-secondary;
 }
- a:hover svg {
+
+a:hover svg {
     @apply text-neutral-800;
 }
+
 div span {
     @apply font-body;
 }
@@ -74,9 +79,11 @@ div span {
 article {
     @apply p-5 grid grid-cols-1 justify-items-center;
 }
+
 article h2 {
     @apply text-secondary text-base text-center;
 }
+
 svg {
     @apply icon-shadow-md;
 }
@@ -90,18 +97,20 @@ label {
     @apply font-title text-2xl text-secondary text-shadow col-start-2 col-end-5 xl:col-start-1;
 }
 
- input#email  {
-    @apply border-solid border-4 border-border-dark w-full h-10 bg-neutral-800 mb-4 text-2xl col-start-2 xl:col-start-1 xl:col-end-5 col-end-4 row-start-2  ;
-}
- input#gdpr {
-     @apply mr-2;
- }
-input#submit  {
-    @apply  border-solid border-2 border-border-dark font-title text-2xl text-neutral-900 w-32 h-10 mt-5 bg-primary rounded shadow ;
+input {
+    @apply border-solid border-4 border-border-dark w-full h-10 bg-neutral-800 mb-4 text-2xl;
 }
 
-input#submit:hover  {
-    @apply  font-title text-2xl text-[#111] transition-all duration-500 translate-x-0.5 ;
+input#gdpr {
+    @apply mr-2;
+}
+
+input#submit {
+    @apply border-solid border-2 border-border-dark font-title text-2xl text-neutral-900 w-32 h-10 mt-5 bg-primary rounded shadow ;
+}
+
+input#submit:hover {
+    @apply font-title text-2xl text-[#111] transition-all duration-500 translate-x-0.5 ;
 }
 
 textarea:focus,
@@ -116,9 +125,10 @@ input[type]:focus,
 .popup-bg {
     background-color: rgba(0, 0, 0, 0.5);
 }
+
 .popup {
 
-    @apply  flex place-content-center ;
+    @apply flex place-content-center ;
 }
 
 .popup-container {
